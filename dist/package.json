@@ -1,0 +1,53 @@
+{
+  "name": "octopus-editor",
+  "version": "1.0.0",
+  "description": "octopusjs reactjs  editor control",
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rimraf dist/*",
+    "format": "prettier --config .prettierrc --write src/**/*",
+    "build": "npm run clean &&  babel src --out-dir dist/lib && gulp bundle"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krakenui/octopus-editor.git"
+  },
+  "keywords": [
+    "octopus",
+    "reactjs",
+    "editor",
+    "markdown",
+    "code",
+    "json",
+    "yaml",
+    "ck"
+  ],
+  "author": "Luong Phung <luonguit@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@toast-ui/react-editor": "^2.4.0",
+    "classnames": "^2.2.6",
+    "load-script": "^1.0.0",
+    "prop-types": "^15.7.2",
+    "react-ace": "^9.1.3"
+  },
+  "peerDependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "rimraf": "^3.0.2"
+  }
+}
